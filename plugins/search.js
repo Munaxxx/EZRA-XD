@@ -101,7 +101,7 @@ var {result} = await getJson(`https://levanter.onrender.com/ig?q=${match}`)
 const { name, username, avatar, posts, following, followers, description } =
 			result
 await message.client.sendMessage(message.jid, { image:{url: avatar} ,  mimetype:"image/jpeg", contextInfo: { externalAdReply: {
-title: "𝐄𝐙𝐑𝐀-𝐗𝐃",
+title: "ᴊ ᴏ ᴊᴏ",
 body: "𝙄𝙂 𝙙𝙚𝙩𝙖𝙞𝙡𝙨",
 sourceUrl: "",
 mediaUrl: "",
