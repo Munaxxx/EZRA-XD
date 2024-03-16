@@ -227,15 +227,15 @@ Description: ${i.desc}\`\`\``);
         .toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
         .split(",");
 
-      let menu = `\n╭━━━〔 ${BOT_INFO.split(";")[0]} 〕━━━┈
+      let menu = `\n╭━━━〔 ${BOT_INFO.split(";")[0]} 〕━━┈❍
     ╭──────────────
-  〄 │  *OWNER*:  ${BOT_INFO.split(";")[1]}
-  〄 │  *USER*: ${message.pushName}
-  〄 │  *DATE*: ${date}
-  〄 │  *TIME*: ${time}
-  〄 │  *COMMANDS*: ${plugins.commands.length}
-  〄 │  *MODE*: ${config.WORK_TYPE}
-  〄 │  *VERSION*: ${require("../package.json").version}
+  ✰ │  *OWNER*:  ${BOT_INFO.split(";")[1]}
+  ✰ │  *USER*: ${message.pushName}
+  ✰ │  *DATE*: ${date}
+  ✰ │  *TIME*: ${time}
+  ✰ │  *COMMANDS*: ${plugins.commands.length}
+  ✰ │  *MODE*: ${config.WORK_TYPE}
+  ✰ │  *VERSION*: ${require("../package.json").version}
     ╰──────────────
 ╰━━━━━━━━━━━━━━━\n`
 
@@ -273,7 +273,7 @@ menu += `\n   ╭┴────────────┈⊷`;
       menu += `╰─────────────┈⊷`;
       let penu = tiny(menu)
       let img = config.BOT_INFO.split(';')[2]
-      return await message.sendFromUrl(img, {fileLength: "5555544444", gifPlayback: true, caption: (penu)}, {quoted: message })
+      return await message.sendFromUrl(img, {fileLength: "11111111", gifPlayback: true, caption: (penu)}, {quoted: message })
     }
 }catch(e){
 message.reply(e)
@@ -317,15 +317,15 @@ command(
       if (desc) menu += `\n│  Use: \`\`\`${desc}\`\`\``;
       menu += `\n│\n`;
     });
-    menu += `╰───────┈┫「 𝐄𝐙𝐑𝐀-𝐗𝐃-𝐁𝐎𝐓 」┣┈────♡`;
+    menu += `╰───────┈┫「 𝑗𝑜-𝐽𝑂 」┣┈────♡`;
     return await message.reply(message.jid, { text: (tiny(menu)), contextInfo: { externalAdReply: {
-title: "𝚵𝚭𝚪𝚫-𝚾𝐃",
+title: "ᴊ ᴏ ᴊᴏ",
 sourceUrl: "",
-mediaUrl: "https://instagram.com/abhiiiiiyh",
+mediaUrl: "",
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/PlDhcfI.jpeg" }} }) })
+thumbnailUrl: "https://i.imgur.com/IsLtsl3.jpeg" }} }) })
 
 
 
@@ -455,7 +455,7 @@ command(
 	type: 'user'
 }, async (message, match) => {
 	match = match || message.reply_message.text
-	if (!match) return await message.reply('*_Need Text_!*\n *Example: setbio _Ezra-XD_*.')
+	if (!match) return await message.reply('*_Need Text_!*\n *Example: setbio _JOJo_*.')
 	await message.client.updateProfileStatus(match)
 	await message.reply('*_Successfully bio updated_*')
 })
